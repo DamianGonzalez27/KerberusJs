@@ -1,0 +1,13 @@
+node_modules
+package-lock.json
+.git
+serverless.yml
+jsdoc.json
+.eslintrc.js
+commitlint.config.js
+*.log
+tutorials/
+docs/
+.vscode/
+README.md
+config/

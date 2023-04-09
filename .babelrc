@@ -1,0 +1,25 @@
+{
+    "presets": ["@babel/preset-env"],
+    "plugins": [
+      "minify-simplify",
+        [
+          "module-resolver",
+          {
+            "root": ["./"],
+            "alias": {
+              "@adapters": "./src/infrastructure",
+              "@core": "./src/core",
+              "@configs": "./src/configs",
+              "@middlewares": "./src/infrastructure/middlewares",
+              "@entities": "./src/domain/entities",
+              "@repos": "./src/domain/repositories",
+              "@exceptions": "./src/aplication/exceptions",
+              "@models": "./src/aplication/models",
+              "@ports": "./src/aplication/ports",
+              "@services": "./src/aplication/services",
+              "@cases": "./src/aplication/cases"
+            }
+          }
+        ]
+      ]
+}

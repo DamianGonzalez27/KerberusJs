@@ -1,0 +1,39 @@
+{
+  "plugins": [],
+  "source": {
+    "include": ["src"],
+    "includePattern": ".js$",
+    "excludePattern": "(node_modules|docs)"
+  },
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false
+  },
+  "opts": {
+    "recurse": true,
+    "destination": "./docs",
+    "template": "node_modules/clean-jsdoc-theme",
+    "readme": "./README.md",
+    "tutorials": "./tutorials",
+    "theme_opts": {
+      "theme": "dark",
+      "sections": [
+        "Tutorials",
+        "Global",
+        "Classes",
+        "Modules",
+        "Externals",
+        "Events",
+        "Namespaces"
+      ],
+
+      "meta": [
+        {
+          "name": "author",
+          "content": "Erick Damian Gonzalez Aranda"
+        }
+      ],
+      "footer": "Mr.Kerberus"
+    }
+  }
+}
